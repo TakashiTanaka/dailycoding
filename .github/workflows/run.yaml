@@ -1,0 +1,27 @@
+name: react-build
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  react-build-deploy:
+    runs-on: ubuntu-latest # 実行するインスタンス
+    steps:
+      - uses: actions/checkout@v3 # チェックアウト
+
+      - name: Setup Node
+        uses: actions/setup-node@v3 # 使用するnodeのバージョン指定
+        with:
+          node-version: 16
+
+      - name: Build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
