@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import data from './data.json';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="sketches/2021/1/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-black text-white'>
+      <header></header>
+      <main>
+        <h1 className='text-5xl'>Daily Coding</h1>
+        {data.map(info => {
+          return (
+            <>
+              <p className='text-4xl'>{info.year}</p>
+              <div className='text-lg'>
+                {info.sketches.map(sketche => (
+                  <div className='flex'>
+                    <p>{sketche.date}</p>
+                    <p>{sketche.title}</p>
+                    <p>{sketche.memo}</p>
+                    <p>{sketche.tag[0]}</p>
+                    <a
+                      className="bg-white text-black"
+                      href={sketche.path}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      作品を見る
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </>
+          );
+        })}
+      </main>
     </div>
   );
 }
