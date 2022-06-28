@@ -1,5 +1,5 @@
-# Draw Circles
+# Lightning Walk
 
-date: 2021/06/20
-memo: mouseIsPressedの使い方を学んだ
-tag: mouse, ellipse
+date: 2021/02/02
+memo: ベクトルを配列にまとめて、その情報を基にラインを描く
+tag: line, array
