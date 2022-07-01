@@ -1,0 +1,44 @@
+function setup() {
+  createCanvas(800, 800);
+  background(0);
+  stroke(255);
+  iterator(800, i => {
+    // let m = map(new p5.Gen().random(i, 'low'), 0, 1, 0, height);
+    let m = map(i, 0, 800, 0, 1);
+    let n = map(new p5.Gen().waveform(m, 'sine'), 0, 1, height / 2, 0);
+    // let n = map(new p5.Gen().waveform(m, 'cosine'), 0, 1, height / 2, 0);
+    // let n = map(new p5.Gen().waveform(m, 'sawtooth'), 0, 1, height / 2, 0);
+    // let n = map(new p5.Gen().waveform(m, 'sawdown'), 0, 1, height / 2, 0);
+    // let n = map(new p5.Gen().waveform(m, 'phasor'), 0, 1, height / 2, 0);
+    // let n = map(new p5.Gen().waveform(m, 'square'), 0, 6, height / 2, 0);
+    // let n = map(new p5.Gen().waveform(m, 'rectangle'), 0, 2, height / 2, 0);
+    // let n = map(new p5.Gen().waveform(m, 'pulse'), 0, 2, height / 2, 0);
+    // let n = map(new p5.Gen().waveform(m, 'buzz'), 0, 1, height / 2, 0);
+    // let n = map(new p5.Gen().window(m, 'hamming', [1.0, 0.5, 0.3]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'hanning', [1.0, 0.5, 0.3]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'bartlett', [1.0, 0.5, 0.3]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'bartlett-hann', [1.0, 0.5, 0.3]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'blackman', [1.0, 0.5, 0.3]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'generalizedblackman', [1.0, 0.5, 0.3]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'blackman-harris', [1.0, 0.5, 0.3]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'blackman-nuttal', [1.0, 0.5, 0.3]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'nuttal', [1.0, 0.5, 0.3]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'gaussian', [1.0, 0.5, 0.3]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'kaiser', [1.0, 0.5, 0.3]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'rectangle', [1.0, 0.5, 0.3]), 0, 10, height, 0);
+    // let n = map(new p5.Gen().window(m, 'cosine', [1.0, 0.5, 0.3]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'sinc', [1.0, 0.5, 0.3]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'flattop', [1.0, 0.5, 0.3]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'tukey', [1.0, 0.5, 0.3]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'slidinggaussian', [0.5, 0.1]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'adjustablecosine', [0.5]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'elliptic', [0.5]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'hyperelliptic', [0.5]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'squircular', [0.5]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'poisson', [0.5]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'hann-poisson', [0.5]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().window(m, 'slidinghann-poisson', [0.5, 0.5]), 0, 1, height, 0);
+    // let n = map(new p5.Gen().bpf(m, [0, 0, 1, 1, 2, 0]), 0, 1, 0, height);
+    point(i, n);
+  });
+}
