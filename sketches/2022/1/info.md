@@ -1,5 +1,5 @@
-# Draw Circles
+# 2022
 
-date: 2021/06/20
-memo: mouseIsPressedの使い方を学んだ
-tag: mouse, ellipse
+date: 2022/01/01
+memo: 2022
+tag: typography, motion

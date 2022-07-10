@@ -1,0 +1,21 @@
+{
+  "name": "original-sketch",
+  "version": "1.0.0",
+  "description": "",
+  "sorce": "index.html",
+  "scripts": {
+    "dev": "rm -rf dist/* && parcel src/index.html --open",
+    "build": "rm -rf build/* && parcel build src/index.html --dist-dir build --no-source-maps --no-optimize --no-content-hash",
+    "o": "rm -rf op/* && parcel build src/index.html --dist-dir op --no-source-maps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/p5": "^1.3.1",
+    "parcel": "^2.0.1"
+  },
+  "dependencies": {
+    "p5": "^1.4.0"
+  }
+}

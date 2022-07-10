@@ -1,16 +1,12 @@
-let w, h;
-let brushSize = 0.3;
+const ex = p5ex.Extension;
+const func = p5ex.Function;
 
 function setup() {
-  const canvas = createCanvas(windowWidth, windowHeight);
-  canvas.parent(document.getElementById('canvas'));
+  func.createFullCanvas();
   noStroke();
   colorMode(HSB);
   ellipseMode(CENTER);
   background(0);
-
-  w = width;
-  h = height;
 }
 
 function draw() {
@@ -18,10 +14,11 @@ function draw() {
 }
 
 function drawBrush() {
+  let brushSize = width * 0.3;
   if (mouseIsPressed) {
-    for (let j = 0; j <= (w * brushSize) / 2; j += 2) {
+    for (let j = 0; j <= brushSize / 2; j += 2) {
       fill(random(0, 360), 100, 100);
-      ellipse(mouseX, mouseY, w * brushSize - j * 2);
+      ex.exCircle(createVector(mouseX, mouseY), brushSize - j * 2);
     }
   }
 }

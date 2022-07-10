@@ -1,0 +1,5 @@
+# Loop 10
+
+date: 2021/06/07
+memo: 輪を作り、sinとcosで変形する。
+tag: loop, circle, sin, cos, monotone, motion
