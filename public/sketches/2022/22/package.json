@@ -2,7 +2,7 @@
   "name": "22",
   "version": "1.0.0",
   "description": "",
-  "main": "mySketch.js",
+  "main": "functions.js",
   "directories": {
     "lib": "lib"
   },
