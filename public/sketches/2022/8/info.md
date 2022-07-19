@@ -1,1 +1,5 @@
-05-genuary-05-destroy-square
+# Destroy Square
+
+date: 2021/01/05
+memo: スクエアを壊す
+tag: square
