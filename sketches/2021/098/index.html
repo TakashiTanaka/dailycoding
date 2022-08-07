@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>noise_4
+  </title>
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="mySketch.js"></script>
+  <script src="../../library/CCapture.all.min.js"></script>
+  <script src="../../library/gif.worker.js"></script>
+  <script>
+    var capturer = new CCapture({
+      framerate: 8,
+      format: 'png',
+      // workersPath: '',
+      verbose: true
+    });
+  </script>
+</body>
+
+</html>

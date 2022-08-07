@@ -1,5 +1,5 @@
-# Melt
+# Spiral Typography
 
-date: 2022/06/30
-memo: 文字を溶かすような表現
-tag: typography, melt, pixels
+date: 2021/01/15
+memo: 螺旋状の文字
+tag: typography, spiral
