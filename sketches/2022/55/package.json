@@ -1,0 +1,22 @@
+{
+  "name": "55",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cp-template": "cp /Volumes/HD-NRLD4.0U3-BA/T/Data/Project/dailycoding/template/* /Volumes/HD-NRLD4.0U3-BA/T/Data/Project/dailycoding/public/sketches/2022/55",
+    "unlink-p5ex": "$(git rev-parse --show-toplevel)/utils/unlink-p5ex.bash $INIT_CWD",
+    "cp": "cp node_modules/my-p5-ex/dist/p5ex.js lib/",
+    "start": "live-server ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "my-p5-ex": "^1.0.9"
+  }
+}
