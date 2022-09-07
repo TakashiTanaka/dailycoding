@@ -1,0 +1,27 @@
+{
+  "name": "59",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "cp-template": "cp /Volumes/HD-NRLD4.0U3-BA/T/Data/Project/dailycoding/template/* /Volumes/HD-NRLD4.0U3-BA/T/Data/Project/dailycoding/public/sketches/2022/59",
+    "unlink-p5ex": "$(git rev-parse --show-toplevel)/utils/unlink-p5ex.bash $INIT_CWD",
+    "build": "webpack build",
+    "start": "webpack --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/p5": "^1.4.2",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "terser-webpack-plugin": "^5.3.6",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.8.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
